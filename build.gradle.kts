@@ -1,83 +1,99 @@
 plugins {
-    `java-library`
-    kotlin("multiplatform")
+    kotlin("jvm")
+    jacoco
     `maven-publish`
     signing
+    id("io.gitlab.arturbosch.detekt")
+    id("org.jetbrains.dokka")
+    id("org.jlleitschuh.gradle.ktlint")
     id("org.danilopianini.git-sensitive-semantic-versioning")
+    id("org.danilopianini.publish-on-central")
 }
 
-apply(plugin = "org.danilopianini.git-sensitive-semantic-versioning")
-
 group = "org.danilopianini"
+
 gitSemVer {
     version = computeGitSemVer()
 }
 
 repositories {
     mavenCentral()
+    mapOf(
+        "kotlin/dokka" to setOf("org.jetbrains.dokka"),
+        "arturbosch/code-analysis" to setOf("io.gitlab.arturbosch.detekt")
+    ).forEach { (uriPart, groups) ->
+        maven {
+            url = uri("https://dl.bintray.com/$uriPart")
+            content { groups.forEach { includeGroup(it) } }
+        }
+    }
+}
+
+dependencies {
+    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:_")
+    testImplementation("io.kotest:kotest-runner-junit5:_")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:_")
+    testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:_")
+    testImplementation("org.mockito:mockito-core:_")
 }
 
 kotlin {
-    sourceSets {
-        val commonMain by getting {
-            dependencies {
-                api(kotlin("stdlib-common"))
-            }
-        }
-        val commonTest by getting {
-            dependencies {
-                implementation(kotlin("test-common"))
-                implementation(kotlin("test-annotations-common"))
-            }
-        }
-        jvm {
-            compilations {
-                get("main").defaultSourceSet {
-                    dependencies {
-                        implementation(kotlin("stdlib-jdk8"))
-                    }
-                }
-                get("test").defaultSourceSet {
-                    dependencies {
-                        implementation("io.kotest:kotest-runner-junit5:_")
-                        implementation("io.kotest:kotest-assertions-core-jvm:_")
-                        implementation("org.mockito:mockito-core:_")
-                    }
-                }
-            }
-            mavenPublication {
-                artifactId = project.name + "-jvm"
-            }
-        }
-
-        js {
-            nodejs()
-            compilations {
-                get("main").defaultSourceSet {
-                    dependencies {
-                        implementation(kotlin("stdlib-js"))
-                    }
-                }
-                get("test").defaultSourceSet {
-                    dependencies {
-                        implementation(kotlin("test-js"))
-                    }
-                }
-            }
-            mavenPublication {
-                artifactId = project.name + "-js"
-            }
-        }
-
-        targets.all {
-            compilations.all {
-                kotlinOptions {
-                    allWarningsAsErrors = true
-                    freeCompilerArgs = listOf("-XXLanguage:+InlineClasses", "-Xopt-in=kotlin.RequiresOptIn")
-                }
+    target {
+        compilations.all {
+            kotlinOptions {
+                allWarningsAsErrors = true
+                freeCompilerArgs = listOf("-XXLanguage:+InlineClasses", "-Xopt-in=kotlin.RequiresOptIn")
             }
         }
     }
+}
+
+tasks.test {
+    useJUnitPlatform()
+    testLogging {
+        showStandardStreams = true
+        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+    }
+}
+
+tasks.jacocoTestReport {
+    reports {
+        // Used by Codecov.io
+        xml.isEnabled = true
+    }
+}
+
+detekt {
+    failFast = true
+    buildUponDefaultConfig = true
+    config = files("$projectDir/config/detekt.yml")
+    reports {
+        html.enabled = true
+        xml.enabled = true
+        txt.enabled = true
+    }
+}
+
+tasks.withType<org.jetbrains.dokka.gradle.DokkaTask> {
+    // Workaround for https://github.com/Kotlin/dokka/issues/294
+    outputFormat = if (JavaVersion.current().isJava10Compatible) "html" else "javadoc"
+    outputDirectory = "$buildDir/javadoc"
+    tasks.withType<org.danilopianini.gradle.mavencentral.JavadocJar> {
+        from(outputDirectory)
+    }
+}
+
+if (System.getenv("CI") == true.toString()) {
+    signing {
+        val signingKey: String? by project
+        val signingPassword: String? by project
+        useInMemoryPgpKeys(signingKey, signingPassword)
+    }
+}
+
+publishOnCentral {
+    projectLongName.set("Template Kotlin JVM Project")
+    projectDescription.set("A template repository for Kotlin JVM projects")
 }
 
 publishing {
