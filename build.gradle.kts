@@ -32,6 +32,7 @@ repositories {
 
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:_")
+    implementation(kotlin("stdlib"))
     testImplementation("io.kotest:kotest-runner-junit5:_")
     testImplementation("io.kotest:kotest-assertions-core-jvm:_")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:_")
