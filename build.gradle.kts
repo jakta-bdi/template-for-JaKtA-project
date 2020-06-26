@@ -20,6 +20,7 @@ repositories {
     mavenCentral()
     mapOf(
         "kotlin/dokka" to setOf("org.jetbrains.dokka"),
+        "kotlin/kotlinx.html" to setOf("org.jetbrains.kotlinx"),
         "arturbosch/code-analysis" to setOf("io.gitlab.arturbosch.detekt")
     ).forEach { (uriPart, groups) ->
         maven {
@@ -83,12 +84,10 @@ tasks.withType<org.jetbrains.dokka.gradle.DokkaTask> {
     }
 }
 
-if (System.getenv("CI") == true.toString()) {
-    signing {
-        val signingKey: String? by project
-        val signingPassword: String? by project
-        useInMemoryPgpKeys(signingKey, signingPassword)
-    }
+signing {
+    val signingKey: String? by project
+    val signingPassword: String? by project
+    useInMemoryPgpKeys(signingKey, signingPassword)
 }
 
 publishOnCentral {
