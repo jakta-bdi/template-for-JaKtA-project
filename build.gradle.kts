@@ -20,11 +20,11 @@ repositories {
     mavenCentral()
     jcenter {
         content {
-            includeGroup("io.gitlab.arturbosch.detekt")
-            includeGroupByRegex("""org\.jetbrains\.(dokka|kotlinx)""")
-            includeGroup("org.jetbrains")
-            // TODO: Remove when https://github.com/korlibs/korte/issues/13 is resolved
-            includeGroup("com.soywiz.korlibs.korte")
+            onlyForConfigurations(
+                "detekt",
+                "dokkaJavadocPlugin",
+                "dokkaJavadocRuntime"
+            )
         }
     }
     mapOf(
