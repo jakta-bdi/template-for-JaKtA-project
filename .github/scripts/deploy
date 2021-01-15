@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+./gradlew publishKotlinMavenPublicationToCentralS01Repository
+./gradlew publishKotlinMavenPublicationToGithubRepository || true

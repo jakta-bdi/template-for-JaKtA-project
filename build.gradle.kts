@@ -1,3 +1,5 @@
+import org.danilopianini.gradle.mavencentral.mavenCentral
+
 plugins {
     kotlin("jvm")
     jacoco
@@ -82,6 +84,14 @@ signing {
 publishOnCentral {
     projectLongName = "Template Kotlin JVM Project"
     projectDescription = "A template repository for Kotlin JVM projects"
+    repository("https://maven.pkg.github.com/danysk/${rootProject.name}".toLowerCase()) {
+        user = "DanySK"
+        password = System.getenv("GITHUB_TOKEN")
+    }
+    repository("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/", "CentralS01") {
+        user = mavenCentral().user()
+        password = mavenCentral().password()
+    }
 }
 
 publishing {
