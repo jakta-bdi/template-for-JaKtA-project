@@ -1,8 +1,6 @@
 plugins {
     kotlin("jvm")
     jacoco
-    `maven-publish`
-    signing
     id("io.gitlab.arturbosch.detekt")
     id("org.jetbrains.dokka")
     id("org.jlleitschuh.gradle.ktlint")
