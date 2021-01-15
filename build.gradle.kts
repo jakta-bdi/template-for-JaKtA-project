@@ -77,7 +77,7 @@ tasks.jacocoTestReport {
 detekt {
     failFast = true
     buildUponDefaultConfig = true
-    config = files("$projectDir/config/detekt.yml")
+    config = files("$projectDir/config/detekt/detekt.yml")
     reports {
         html.enabled = true
         xml.enabled = true
