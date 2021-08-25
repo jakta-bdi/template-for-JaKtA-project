@@ -14,15 +14,6 @@ group = "org.danilopianini"
 
 repositories {
     mavenCentral()
-    jcenter {
-        content {
-            onlyForConfigurations(
-                "detekt",
-                "dokkaJavadocPlugin",
-                "dokkaJavadocRuntime"
-            )
-        }
-    }
 }
 
 dependencies {
