@@ -10,5 +10,5 @@ gradleEnterprise {
     }
 }
 
-rootProject.name = "Template-for-Kotlin-Gradle-Projects"
+rootProject.name = "Template-for-Kotlin-JVM-Projects"
 enableFeaturePreview("VERSION_CATALOGS")
