@@ -1,13 +1,13 @@
-import org.danilopianini.gradle.mavencentral.mavenCentral
-
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    kotlin("jvm")
-    jacoco
-    id("io.gitlab.arturbosch.detekt")
-    id("org.jetbrains.dokka")
-    id("org.jlleitschuh.gradle.ktlint")
-    id("org.danilopianini.git-sensitive-semantic-versioning")
-    id("org.danilopianini.publish-on-central")
+    `java-gradle-plugin`
+    alias(libs.plugins.dokka)
+    alias(libs.plugins.gitSemVer)
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.kotlin.qa)
+    alias(libs.plugins.publishOnCentral)
+    alias(libs.plugins.multiJvmTesting)
+    alias(libs.plugins.taskTree)
 }
 
 group = "org.danilopianini"
@@ -17,12 +17,8 @@ repositories {
 }
 
 dependencies {
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:_")
-    implementation(kotlin("stdlib"))
-    testImplementation("io.kotest:kotest-runner-junit5:_")
-    testImplementation("io.kotest:kotest-assertions-core-jvm:_")
-    testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:_")
-    testImplementation("org.mockito:mockito-core:_")
+    implementation(libs.kotlin.stdlib)
+    testImplementation(libs.bundles.kotlin.testing)
 }
 
 kotlin {
@@ -40,25 +36,10 @@ tasks.test {
     useJUnitPlatform()
     testLogging {
         showStandardStreams = true
+        showCauses = true
+        showStackTraces = true
+        events(*org.gradle.api.tasks.testing.logging.TestLogEvent.values())
         exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
-    }
-}
-
-tasks.jacocoTestReport {
-    reports {
-        // Used by Codecov.io
-        xml.isEnabled = true
-    }
-}
-
-detekt {
-    failFast = true
-    buildUponDefaultConfig = true
-    config = files("$projectDir/config/detekt/detekt.yml")
-    reports {
-        html.enabled = true
-        xml.enabled = true
-        txt.enabled = true
     }
 }
 
@@ -75,20 +56,20 @@ publishOnCentral {
         user = "DanySK"
         password = System.getenv("GITHUB_TOKEN")
     }
-}
-
-publishing {
-    publications {
-        withType<MavenPublication> {
-            pom {
-                developers {
-                    developer {
-                        name.set("Danilo Pianini")
-                        email.set("danilo.pianini@gmail.com")
-                        url.set("http://www.danilopianini.org/")
+    publishing {
+        publications {
+            withType<MavenPublication> {
+                pom {
+                    developers {
+                        developer {
+                            name.set("Danilo Pianini")
+                            email.set("danilo.pianini@gmail.com")
+                            url.set("http://www.danilopianini.org/")
+                        }
                     }
                 }
             }
         }
     }
 }
+
