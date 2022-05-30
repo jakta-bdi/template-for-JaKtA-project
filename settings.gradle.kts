@@ -1,5 +1,6 @@
 plugins {
     id("com.gradle.enterprise") version "3.7"
+    id("org.danilopianini.gradle-pre-commit-git-hooks") version "1.0.11"
 }
 
 gradleEnterprise {
@@ -8,6 +9,11 @@ gradleEnterprise {
         termsOfServiceAgree = "yes"
         publishOnFailure()
     }
+}
+
+gitHooks {
+    commitMsg { conventionalCommits() }
+    createHooks()
 }
 
 rootProject.name = "Template-for-Kotlin-JVM-Projects"
