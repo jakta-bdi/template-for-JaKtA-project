@@ -50,11 +50,11 @@ signing {
 }
 
 publishOnCentral {
-    projectLongName = "Template Kotlin JVM Project"
-    projectDescription = "A template repository for Kotlin JVM projects"
+    projectLongName.set("Template Kotlin JVM Project")
+    projectDescription.set("A template repository for Kotlin JVM projects")
     repository("https://maven.pkg.github.com/danysk/${rootProject.name}".toLowerCase()) {
-        user = "DanySK"
-        password = System.getenv("GITHUB_TOKEN")
+        user.set("DanySK")
+        password.set(System.getenv("GITHUB_TOKEN"))
     }
     publishing {
         publications {
