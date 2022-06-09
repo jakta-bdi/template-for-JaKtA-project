@@ -17,4 +17,3 @@ gitHooks {
 }
 
 rootProject.name = "Template-for-Kotlin-JVM-Projects"
-enableFeaturePreview("VERSION_CATALOGS")
