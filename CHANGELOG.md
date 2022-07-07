@@ -1,3 +1,28 @@
+## [0.1.3](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.2...0.1.3) (2022-07-07)
+
+
+### Build and continuous integration
+
+* create a dispatcher workflow triggering only one CI/CD workflow per update on non-default branches with open PRs ([c85002e](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/c85002eae0073f6eb49cdbc998f9b7c3973d10b9))
+* **deps:** bump semantic-release from 19.0.2 to 19.0.3 ([b707f38](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/b707f38e8ea9ef39bac67e68a5fc5f0d65d63e30))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.0.3 ([9b9f604](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/9b9f604ebab44d660686767ed714ad02dbbcaf25))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.0 ([acd04d7](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/acd04d7cc1c17fbb1ed7da615c10be6123bd18f2))
+* ignore dependabot's branch builds ([f08a75d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/f08a75d50e99a95538116e3bcf62ac0b6548ba71))
+
+
+### Dependency updates
+
+* **core-deps:** update kotlin to v1.7.10 ([c38f7db](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/c38f7dbe9c41d719792b02757e5422cf22e1144f))
+* **deps:** update kotest to v5.3.1 ([2b3c1f4](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/2b3c1f472e328c0431e950e5063442ebbcccd369))
+* **deps:** update kotest to v5.3.2 ([c0d6c13](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/c0d6c13e355428b897efcae1b7dbffcece20934b))
+* **deps:** update plugin dokka to v1.7.0 ([b3e75cc](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/b3e75cc12fcead15139d312caba979fa3346a35e))
+* **deps:** update plugin multijvmtesting to v0.4.3 ([6e9bc4c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/6e9bc4c34829691986c3310e536b6268bb00f30f))
+* **deps:** update plugin multijvmtesting to v0.4.4 ([3adee7e](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/3adee7ee1e9e06d1109d36a7e83c2eeefc526f22))
+* **deps:** update plugin multijvmtesting to v0.4.5 ([256c682](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/256c682a00f1b34b398cf89333af12539df93f79))
+* **deps:** update plugin publishoncentral to v0.8.3 ([e67fbdd](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/e67fbddb932699e2e02dc4b6e755b952e9a6a0db))
+* **deps:** update plugin publishoncentral to v1 ([41e2881](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/41e28818f66fc6ebf057e5053609c6e9139a7261))
+* **deps:** update plugin publishoncentral to v2 ([120e083](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/120e0830d11f71e20959443394c8524f1a80ca9e))
+
 ## [0.1.2](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.1...0.1.2) (2022-06-10)
 
 
