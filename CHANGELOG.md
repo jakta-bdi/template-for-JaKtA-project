@@ -1,3 +1,17 @@
+## [0.1.6](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.5...0.1.6) (2022-12-01)
+
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v1.7.22 ([339bb94](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/339bb94a7d39f0ede53d61f456ecfa34f0981454))
+* **deps:** update dependency gradle to v7.6 ([23e84d9](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/23e84d9af2f3bcaa79ac1036ee4c044ca7bf0cd5))
+* **deps:** update dependency org.mockito:mockito-core to v4.9.0 ([714c031](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/714c03121fad63d72ac97b3131699cabb04d2416))
+* **deps:** update plugin kotlin-qa to v0.27.1 ([5c8c6ea](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/5c8c6ead441c6d0bf51ba750ee6fa600cdec4064))
+* **deps:** update plugin kotlin-qa to v0.28.0 ([6a0bb49](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/6a0bb4973e632da5d19b30438a7b728ac7053098))
+* **deps:** update plugin multijvmtesting to v0.4.13 ([4d1e85f](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/4d1e85f233c4b7a9a89e8e1bc7617904770ba18f))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.23 ([21cecaf](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/21cecafd7733cbe3f8fe93245c2c08c5911d2514))
+* **deps:** update plugin publishoncentral to v2.0.9 ([8d5a399](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/8d5a3993babbd65a3af379a0609e0bfedcc12363))
+
 ## [0.1.5](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.4...0.1.5) (2022-11-11)
 
 
