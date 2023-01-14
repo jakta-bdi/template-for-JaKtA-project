@@ -13,7 +13,7 @@
           "windows-\\d\\d(?<version>\\d\\d)"
       ],
       "depNameTemplate": "windows github actions runner",
-      "extractVersion": "^win(?<version>\\d\\d)\/\\d+.\\.\\d+$"
+      "extractVersion": "^win(?<version>\\d\\d)\/\\d+.\\.\\d+$",
       "packageNameTemplate": "actions/runner-images",
       "datasourceTemplate": "github-releases",
       "versioningTemplate": "docker"
