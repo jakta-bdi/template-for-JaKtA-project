@@ -2,5 +2,21 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>DanySK/renovate-config:kotlin"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
+        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
+      ],
+      "matchStrings": [
+          "windows-\\d\\d(?<version>\\d\\d)"
+      ],
+      "depNameTemplate": "windows github actions runner",
+      "extractVersion": "^win(?<version>\d\d)\/\\d+.\\.\\d+$"
+      "packageNameTemplate": "actions/runner-images",
+      "datasourceTemplate": "github-releases",
+      "versioningTemplate": "docker"
+    }
   ]
 }
