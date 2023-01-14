@@ -9,7 +9,7 @@
       "extractVersion": "^win(?<version>\\d\\d)\/\\d+.\\.\\d+$"
     },
     {
-      "matchDepNames": "windows github actions runner",
+      "matchDepNames": "macos github actions runner",
       "extractVersion": "^macOS-(?<version>\\d\\d)\/\\d+.\\.\\d+$"
     },
     {
