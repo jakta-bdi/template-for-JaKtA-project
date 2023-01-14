@@ -37,7 +37,7 @@
         "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
       ],
       "matchStrings": [
-          "macos-\\d\\d(?<currentValue>\\d\\d)"
+          "macos-(?<currentValue>\\d\\d)"
       ],
       "depNameTemplate": "macos github actions runner",
       "packageNameTemplate": "actions/runner-images",
