@@ -16,7 +16,7 @@
         "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
       ],
       "matchStrings": [
-          "windows-\\d\\d(?<version>\\d\\d)"
+          "windows-\\d\\d(?<currentValue>\\d\\d)"
       ],
       "depNameTemplate": "windows github actions runner",
       "packageNameTemplate": "actions/runner-images",
