@@ -9,6 +9,10 @@
       "extractVersion": "^win(?<version>\\d\\d)\/\\d+.\\.\\d+$"
     },
     {
+      "matchDepNames": "windows github actions runner",
+      "extractVersion": "^macOS-12(?<version>\\d\\d)\/\\d+.\\.\\d+$"
+    },
+    {
       "matchDepNames": "ubuntu github actions runner",
       "extractVersion": "^ubuntu(?<version>\\d\\d)\/\\d+.\\.\\d+$"
     }
@@ -23,6 +27,19 @@
           "windows-\\d\\d(?<currentValue>\\d\\d)"
       ],
       "depNameTemplate": "windows github actions runner",
+      "packageNameTemplate": "actions/runner-images",
+      "datasourceTemplate": "github-releases",
+      "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": [
+        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
+        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
+      ],
+      "matchStrings": [
+          "macos-\\d\\d(?<currentValue>\\d\\d)"
+      ],
+      "depNameTemplate": "macos github actions runner",
       "packageNameTemplate": "actions/runner-images",
       "datasourceTemplate": "github-releases",
       "versioningTemplate": "docker"
