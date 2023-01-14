@@ -3,6 +3,12 @@
   "extends": [
     "github>DanySK/renovate-config:kotlin"
   ],
+  "packageRules": [
+    {
+      "matchDepNames": "windows github actions runner",
+      "extractVersion": "^win(?<version>\\d\\d)\/\\d+.\\.\\d+$"
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": [
@@ -13,7 +19,6 @@
           "windows-\\d\\d(?<version>\\d\\d)"
       ],
       "depNameTemplate": "windows github actions runner",
-      "extractVersion": "^win(?<version>\\d\\d)\/\\d+.\\.\\d+$",
       "packageNameTemplate": "actions/runner-images",
       "datasourceTemplate": "github-releases",
       "versioningTemplate": "docker"
