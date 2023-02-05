@@ -1,3 +1,45 @@
+## [0.1.8](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.7...0.1.8) (2023-02-05)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.3.0 ([13c86b2](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/13c86b2b29cc3b553ef4159b8102cb4591ae6d62))
+* **deps:** update danysk/action-checkout action to v0.2.5 ([24985c4](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/24985c4581dde2446dee2ff52ec7119aef607820))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.20 ([4c80a52](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/4c80a52d3cd4068271d610536ddc009cd0da0a5a))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.21 ([da96aef](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/da96aef92dba9e6fb18425efda55b16f680ab671))
+* **deps:** update dependency macos github actions runner to v12 ([9ad1d14](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/9ad1d14fe138134f8469569b2529ce40c842fbea))
+* **deps:** update dependency ubuntu github actions runner to v22 ([cc5c9fb](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/cc5c9fbee0d62a28f87b65bbbc8e4b6b44b4044c))
+* **deps:** update dependency windows github actions runner to v22 ([324dbd7](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/324dbd7819bf7409722de863c9821a956c429ce3))
+* fix bad output export syntax ([f837173](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/f837173700467b373af0d89b963cc214f12f86f5))
+* fix kotlin-reflect reference ([0ec364d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/0ec364daa3d35f145825f2a013a73215a2512385))
+* fix the runner versions ([c13f417](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/c13f41753e8adb96c5ab83c55ccaa068c13edaf2))
+* read the version of npm from the package.json ([e619de3](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/e619de37b9596b0f134c0b2c9e633c79b2bfe428))
+* **renovate:** use the managers from the base configuration ([7a6c87c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/7a6c87c90a4bdceb8f67b2dc78d9d490fc3c3a73))
+* try to make renovate fetch the macos runner version updates ([0cfdc43](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/0cfdc43f157faa454a40534f34b542ac4b6c2613))
+* try to make renovate fetch the macos runner version updates ([2b320ed](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/2b320ede1180bd997b17b4361ddbb7afef50a10a))
+* try to make renovate fetch the macos runner version updates ([8b10071](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/8b100717907bcd7ba721338fd2272f2e2c2ff321))
+* try to make renovate fetch the ubuntu runner version updates ([d266754](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/d26675450718021a4cd35cbdc185518a35cdbc3b))
+* try to make renovate fetch the windows runner version updates ([b23cb23](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/b23cb2305eed2617e624739d5d8e6a6ae5821fb5))
+* try to make renovate fetch the windows runner version updates ([3b009b1](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/3b009b1fe97db0db02c22cb715c5c8a89bdb38c8))
+* try to make renovate fetch the windows runner version updates ([af0d5b6](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/af0d5b69ef1aa30b471bc729f0a0ea647debc7e7))
+* try to update windows versions with renovate ([78c536f](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/78c536f221a3a4eb28dae51cff2dfa2e5523aa37))
+
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v1.8.10 ([16e7c47](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/16e7c477b03b95276cb6f83ff952f092ca27510b))
+* **deps:** update dependency org.mockito:mockito-core to v4.11.0 ([9160077](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/9160077940837fff12a8a6d01770f1aeddf4e00e))
+* **deps:** update dependency org.mockito:mockito-core to v5 ([b4c42b8](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/b4c42b8878ce5fa2e1f7c6dacf176eba9c102f33))
+* **deps:** update dependency org.mockito:mockito-core to v5.1.1 ([8f39431](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/8f39431f11d85a80b564ba479711baff3d28aad8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.16 ([18a9f20](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/18a9f2096454c56fceb35a069a045888010919d7))
+* **deps:** update node.js to 18.13 ([0b13092](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/0b13092313f6ffbdeb473958bf3c1c881b95b7a6))
+* **deps:** update plugin gitsemver to v1 ([1cf814a](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/1cf814af3f849cc24164a30d1e1cda44c29f2a12))
+* **deps:** update plugin kotlin-qa to v0.29.2 ([b5c6d97](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/b5c6d97d89e17c067c9f732ff24e85833bfb84ac))
+* **deps:** update plugin multijvmtesting to v0.4.15 ([34ff7b1](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/34ff7b14e7504312f007a97d1c0bfc4952adaafa))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.1 ([accc2da](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/accc2da5c4ecfcc95438e24fdb542ebca7fa897e))
+* **deps:** update plugin publishoncentral to v2.0.12 ([81f4b46](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/81f4b467df281ca950cbe1c9a0d45b1106ff6890))
+* **deps:** update plugin publishoncentral to v3 ([f9ff08b](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/f9ff08bf52de45492093bbbb53a3553db3f13567))
+
 ## [0.1.7](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.6...0.1.7) (2022-12-30)
 
 
