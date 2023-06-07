@@ -1,3 +1,16 @@
+## [0.1.13](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.12...0.1.13) (2023-06-07)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.8.22 ([d9fa895](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/d9fa89522c4a05f281e79b17af8d1c1c650e53d1))
+* **deps:** update plugin gitsemver to v1.1.10 ([595ef4c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/595ef4cc1510a92e031e0ee1e4b2b8df9e1e66b3))
+* **deps:** update plugin kotlin-qa to v0.42.1 ([50cfceb](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/50cfcebaef2ea33094a8da44ac3bdb06afd9408c))
+* **deps:** update plugin kotlin-qa to v0.43.0 ([64a3ded](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/64a3dedf94632a3685f3e421fb751656e335ef96))
+* **deps:** update plugin kotlin-qa to v0.44.0 ([770dc93](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/770dc93815d671d6bc3aa81a89d5c5fb65ee599c))
+* **deps:** update plugin multijvmtesting to v0.5.2 ([5e4238c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/5e4238caadd49fd188cda0de42ab330405b539aa))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.8 ([edab3b6](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/edab3b66e3a54cd1506d2289b27e1d974d47b70f))
+
 ## [0.1.12](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.11...0.1.12) (2023-06-05)
 
 
