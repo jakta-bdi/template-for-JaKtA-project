@@ -1,6 +1,5 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    `java-gradle-plugin`
     alias(libs.plugins.dokka)
     alias(libs.plugins.gitSemVer)
     alias(libs.plugins.kotlin.jvm)
@@ -52,7 +51,7 @@ signing {
 publishOnCentral {
     projectLongName.set("Template Kotlin JVM Project")
     projectDescription.set("A template repository for Kotlin JVM projects")
-    repository("https://maven.pkg.github.com/danysk/${rootProject.name}".toLowerCase()) {
+    repository("https://maven.pkg.github.com/danysk/${rootProject.name}".lowercase()) {
         user.set("DanySK")
         password.set(System.getenv("GITHUB_TOKEN"))
     }
