@@ -1,3 +1,26 @@
+## [0.1.16](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.15...0.1.16) (2023-08-31)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.6.0 ([e51040f](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/e51040fea5d4c10bf9814192dab3a485157508a4))
+* **deps:** update danysk/action-checkout action to v0.2.11 ([64e5985](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/64e598588974de8c356a1375f93bb69f34d95c4a))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.44 ([06caa86](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/06caa8665f2cdb9e8315679742ae006a78ceb621))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.45 ([6841540](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/684154093aed5df7f0d712c225ec9f8d547552be))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.46 ([8f66b42](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/8f66b42919db9ccced1704fb1e05a88b5e03b37b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.47 ([2eae364](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/2eae3642484fb49dff9605f629f084ef3a1646ec))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.48 ([bb00871](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/bb008714a3b49fa56137ae6331fd874bbbdf608b))
+* **deps:** update plugin publishoncentral to v5.0.12 ([c39e354](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/c39e3547a16faf887cf6a007885721a93b1992e9))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.9.0 ([cf5f451](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/cf5f451351ac1c32e40744a773a5224257a08672))
+
 ## [0.1.15](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.14...0.1.15) (2023-08-23)
 
 
