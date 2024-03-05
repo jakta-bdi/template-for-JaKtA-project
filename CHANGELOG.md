@@ -1,3 +1,64 @@
+## [0.1.21](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.20...0.1.21) (2024-03-05)
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.6 ([1106e5a](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/1106e5a7d188e4cb13714e0da2d8fae56854ffaa))
+* **deps:** update dependency org.mockito:mockito-core to v5.10.0 ([f591d6f](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/f591d6fcdc68517c0ca3bca79dee1917153be491))
+* **deps:** update dependency org.mockito:mockito-core to v5.11.0 ([eff965f](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/eff965fb67f290cd230f1c264415a7a7c90f51b6))
+* **deps:** update dependency org.mockito:mockito-core to v5.9.0 ([3a4df64](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/3a4df64cb2c0672847f9caccbb1834f529bc3c28))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.85 ([5a2a4b6](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/5a2a4b6de31b7e27c54c780b81d2bddac1757f99))
+* **deps:** update node.js to 20.11 ([eb5c48d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/eb5c48db2d8e6f69486dcde9675885ab68b3b638))
+* **deps:** update plugin com.gradle.enterprise to v3.16.2 ([2f94228](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/2f94228402caafa55f16bdf419c771a5f1cdc23a))
+* **deps:** update plugin gitsemver to v2.0.5 ([6982ab1](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/6982ab1326ddebf05c87130b9a5577f7bf1678cf))
+* **deps:** update plugin gitsemver to v3 ([bf5fbd0](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/bf5fbd003d52574d83ae08aa1f998cef43f143da))
+* **deps:** update plugin gitsemver to v3.1.0 ([d551e8c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/d551e8c9d812691e4a91454a6ff4912d5c116ef4))
+* **deps:** update plugin gitsemver to v3.1.1 ([4671c4a](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/4671c4a814179834925c7d72bfe1aa644258c1a9))
+* **deps:** update plugin gitsemver to v3.1.2 ([24362b9](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/24362b9c2de8882e9d76c7aa07c8e851647fe1c2))
+* **deps:** update plugin kotlin-qa to v0.57.1 ([5cb8a1b](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/5cb8a1b95ece042f4bac2012bee69270ff3bc321))
+* **deps:** update plugin kotlin-qa to v0.58.0 ([65ae7dd](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/65ae7dd82b343ee52e6bac8a3f48bd052b3141f4))
+* **deps:** update plugin kotlin-qa to v0.59.0 ([1ebedc3](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/1ebedc3d28207e58d55dfbb569b0d7c73ba96655))
+* **deps:** update plugin kotlin-qa to v0.59.1 ([5ba223b](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/5ba223b3503c512bed4fa9dd857c3112d5554710))
+* **deps:** update plugin kotlin-qa to v0.60.0 ([0709a2d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/0709a2dd94156590731d3e6a1a9db322d56ddfc8))
+* **deps:** update plugin kotlin-qa to v0.60.1 ([9bc6643](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/9bc664335c2a8af513a30a5641566a57948e0642))
+* **deps:** update plugin kotlin-qa to v0.60.2 ([adffe5c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/adffe5c397cbbad725c8cb2f641e86202b8642e7))
+* **deps:** update plugin multijvmtesting to v0.5.8 ([a12c488](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/a12c488c7e9b389f204f14edf88c94b8576a4a94))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.17 ([8a7d957](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/8a7d957288e26f8d01844a6b9aaaec86e29af67b))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2 ([22cdef5](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/22cdef58902dd037e29bb7e878db3402330f8bbc))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.1 ([1541a5c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/1541a5cb496e88bc5a2be577712518eca3090024))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.2 ([80c00d5](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/80c00d50e225ba8f64cb28daebcb006c7b903aad))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.8.0 ([11f36a4](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/11f36a42196a00664be5d86f8cac0214cebdd299))
+* **deps:** update plugin publishoncentral to v5.0.22 ([d49da86](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/d49da866328e9b5057369c51d780a767200fed70))
+* **deps:** update plugin publishoncentral to v5.0.23 ([727a98e](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/727a98e61b3da0962b777558ad23f7edfa4a7721))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.9.20 ([74f7a09](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/74f7a093d61811765f33bd84d47a846e4b25a790))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.0.2 ([4d8968b](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/4d8968b3257fe8aed54f4464b05899bcc9472ee1))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.13 ([ea40952](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/ea40952d1ca6d049f7f4f5fa41b595f585c22e9b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.14 ([38a9d3e](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/38a9d3e2d9c56865de941519d4cdf4da5493cb34))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.15 ([7ad810a](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/7ad810a72ddb0eaca786c5142856919764ef8151))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.16 ([5858bd6](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/5858bd624562df751ab0cbd636f232c6bd5280b0))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.17 ([6cb830c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/6cb830c3e25dc4101e05f12d0e7edde328688e1d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.19 ([1e5260c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/1e5260cdd48de58e376645d5388f9583775bfe27))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.20 ([4929a19](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/4929a19b4879de9d7035a61814c0f8baff7fa4fe))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.0 ([92659ff](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/92659ff0e16781b8a1b225c536959937f82b9da2))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.1 ([06b811d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/06b811d3372fa693eb87fff5ec24783fc071d700))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.2 ([dc01bd3](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/dc01bd36c134e0890010f1c3056232763d568f8e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.0 ([684d8df](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/684d8dff1be778356bdcf8ee781d4ba4629d17e3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.1 ([d66a74b](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/d66a74b30589b6fa48ef8c39b444375bf6248b42))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.2 ([f29f01c](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/f29f01cdcbef2cc599a0874fdbab94f6cc0bac0b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.3 ([0d39d3d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/0d39d3d9f200b3c3c97078b05534c734f39d0db3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.4 ([1df822d](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/1df822dc9c267c010e65b2441e1a4e9fa42e3cca))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.5 ([2b09c57](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/2b09c57b15b6dfed46eed6ca6afca63529a2d625))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.6 ([25c0150](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/25c015089888072ccae251720c799cbcbb22084d))
+* disable fail-fast on matrix jobs ([ead0d61](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/ead0d6188a610306faeb481ee6ffc699ae618177))
+
 ## [0.1.20](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.19...0.1.20) (2023-12-21)
 
 
