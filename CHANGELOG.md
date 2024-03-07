@@ -1,3 +1,11 @@
+## [0.1.22](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.21...0.1.22) (2024-03-07)
+
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v1.9.23 ([e79860b](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/e79860b9b479c0ec7b86130f3bce61296428f90c))
+* **deps:** update plugin publishoncentral to v5.0.24 ([b90ebd2](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/commit/b90ebd249eed694b42bc712dd936289ac2ebfd35))
+
 ## [0.1.21](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.20...0.1.21) (2024-03-05)
 
 
