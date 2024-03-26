@@ -37,6 +37,7 @@ jobs:
   release:
     permissions: 
       contents: write
+      packages: write
     concurrency:
       # Only one release job at a time. Strictly sequential.
       group: release-${{ github.workflow }}-${{ github.event.number || github.ref }}
@@ -53,7 +54,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
         with:
-          token: ${{ secrets.DEPLOYMENT_TOKEN }}
+          token: ${{ github.token }}
       - name: Find the version of Node from package.json
         id: node-version
         run: echo "version=$(jq -r .engines.node package.json)" >> $GITHUB_OUTPUT
