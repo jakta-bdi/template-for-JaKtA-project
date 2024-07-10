@@ -1,8 +1,8 @@
-var publishCmd = `
+const publishCmd = `
 ./gradlew uploadKotlin release || exit 1
 ./gradlew publishKotlinOSSRHPublicationToGithubRepository || true
 `
-var config = require('semantic-release-preconfigured-conventional-commits');
+import config from 'semantic-release-preconfigured-conventional-commits' assert { type: "json" };
 config.plugins.push(
     [
         "@semantic-release/exec",
@@ -13,4 +13,4 @@ config.plugins.push(
     "@semantic-release/github",
     "@semantic-release/git",
 )
-module.exports = config
+export default config
