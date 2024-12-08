@@ -1,5 +1,5 @@
 const publishCmd = `
-./gradlew uploadKotlin release || exit 1
+./gradlew uploadKotlin releaseStagingRepositoryOnMavenCentral || exit 1
 ./gradlew publishKotlinOSSRHPublicationToGithubRepository || true
 `
 import config from 'semantic-release-preconfigured-conventional-commits' with { type: "json" };
