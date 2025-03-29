@@ -2,6 +2,7 @@
 kotest = "5.9.1"
 kotlin = "2.1.20"
 mockito = "5.16.1"
+jakta = "0.11.122"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
@@ -10,6 +11,7 @@ kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref =
 kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
 kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotest" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+jakta-dsl = { module = "it.unibo.jakta:jakta-dsl", version.ref = "jakta" }
 
 [bundles]
 kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm", "mockito-core" ]

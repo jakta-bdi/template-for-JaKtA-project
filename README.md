@@ -1,9 +1,11 @@
-# TODO LIST
+# Template for JaKtA project
+
+## How to use
 
 1. Rename the project in `settings.gradle.kts`
-1. Change the project name and description in the `publishOnCentral` block in `build.gradle.kts`
-1. Configure the repository to have the following variables set:
-  * ORG_GRADLE_PROJECT_signingKey
-  * ORG_GRADLE_PROJECT_signingPassword
-  * MAVEN_CENTRAL_USERNAME
-  * MAVEN_CENTRAL_PASSWORD
+2. Properly configure in `build.gradle.kt` the main class this project will use
+3. Execute: `./gradlew run`
+
+## Documentation
+
+Please refer to JaKtA [documentation](jakta-bdi.github.io)
