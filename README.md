@@ -1,4 +1,5 @@
 # Template for JaKtA project
+This template project refers to JaKtA versions prior to 1.0.0
 
 ## How to use
 
